@@ -4,10 +4,10 @@ class SpicesController < ApplicationController
         render json: spices
     end
 
-    def show
-        spice = Spice.find_by(id: params[:id])
-        render json: spice
-    end
+    # def show
+    #     spice = Spice.find_by(id: params[:id])
+    #     render json: spice
+    # end
 
     def create
         spice = Spice.create(spice_params)
